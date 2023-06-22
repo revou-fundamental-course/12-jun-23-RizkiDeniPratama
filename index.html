@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Temperature Conversion</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h2>Konversi Suhu</h2>
+            <p>built in seseorang</p>
+            <form onsubmit="tempConvert(); return false">
+                <!-- select option -->
+                <select name="temptype" id="temptype">
+                    <option value="celcius">Celcius To Fahrenheit</option>
+                    <option value="fahrenheit">Fahrenheit To Celcius</option>
+                </select>
+                <!-- input suhu -->
+                <input
+                    type="number"
+                    name="inputfield"
+                    id="inputfield"
+                    placeholder="input suhu"
+                />
+                <div class="footer cf">
+                    <!-- button -->
+                    <div class="button">
+                        <button type="submit">Convert</button>
+                    </div>
+                    <!-- result -->
+                    <div id="result"></div>
+                </div>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
